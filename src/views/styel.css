@@ -1,0 +1,237 @@
+
+
+.pege {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.pege-to img {
+  position: absolute;
+  width: 100%;
+  height: 40rem;
+}
+
+.pege-to p{
+  position: absolute;
+  float: left;
+  font-size: 5rem;
+  color: aliceblue;
+  font-weight: bold;
+  margin-top: 10rem;
+  box-shadow: 0.5rem 0.5rem 1rem #fff;
+}
+
+.pege-box {
+  display: flex;
+  position: absolute;
+  float: left;
+  width: 92%;
+  height: 40rem;
+  background: #000;
+  border-radius: 2rem;
+  margin: 4%;
+  z-index: 1000;
+  margin-top: 25rem;
+  box-shadow: -0.2rem 0 0.5rem red, /*左边阴影*/ 
+               0 -0.2rem 0.5rem #fff,/*上边阴影*/
+               0.2rem 0 0.5rem green,/*右边阴影*/
+               0 0.2rem 0.5rem #ff6726 inset; /*下边阴影*/
+
+  justify-content: space-evenly;
+}
+
+.quan {
+  position: relative;
+  float: left;
+  width: 12rem;
+  height: 30rem;
+  background: #000;
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 0 0 10rem 10rem;
+  box-shadow: 0 0 1rem #f0f8ff;
+}
+
+.quan span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f0f8ff;
+}
+
+.epidemic {
+  width: 12rem;
+  height: 12rem;
+  background: #282c35;
+  border-radius: 50%;
+  margin-top: 2rem;
+  box-shadow: 0 0 2rem red inset;
+}
+
+.epidemic1 {
+  box-shadow: 0 0 2rem red inset;
+}
+
+.shadow {
+  box-shadow: 0 0 2rem #ff5735 inset;
+}
+
+.shadow3 {
+  box-shadow: 0 0 2rem #f0f8ff inset;
+}
+
+.shadow2 {
+  box-shadow: 0 0 2rem #01ff40 inset;
+}
+
+.epidemic p {
+  float: left;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #e10000;
+  margin: 1.2rem;
+  margin-top: 4rem;
+  text-shadow: #ffffff 0.3rem 0.3rem 0.5rem;
+}
+
+.shadow p {
+  color: #ff6726;
+}
+
+.shadow3 p {
+  color: #ffffff;
+}
+
+.shadow2 p {
+  color: #09ff44;
+}
+
+.quan-text {
+  position: relative;
+}
+
+.quan .quantext p {
+  position: absolute;
+  font-size: 2rem;
+  left: 0;
+  top: 19rem;
+  color: #f1f3f4;
+  font-weight: 600;
+}
+
+.quan .quantext p:nth-child(2) {
+  position: absolute;
+  font-size: 2rem;
+  left: 3rem;
+  top: 22rem;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.quan .color2 p:nth-child(2) {
+  color: #ff6726;
+}
+
+.quan .color4 p:nth-child(2) {
+  color: #ffffff;
+}
+
+.quan .color3 p:nth-child(2) {
+  color: #09ff44;
+}
+
+.dt {
+  position: absolute;
+  float: left;
+  width: 92%;
+  height: 8rem;
+  background: #000;
+  border-radius: 0 0 2rem 2rem;
+  margin: 4%;
+  bottom: 0;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #f0f8ff;
+  letter-spacing: 1rem;
+  box-shadow: 0 0 2rem #424f4e inset;
+  text-align: center;
+}
+
+.time {
+  position: absolute;
+  width: 92%;
+  height: 14rem;
+  margin: 4%;
+  box-shadow: 0 0 1rem #ffffff inset;
+  background: linear-gradient(90deg, #202340,#000,#282c35, #21252b, #202340, #000);
+  bottom: 20rem;
+  text-align: center;
+  border-radius: 10rem;
+}
+
+.time p {
+  font-size: 2rem;
+  color: #eee;
+}
+
+.time span {
+  font-size: 2.5rem;
+  color: #eee;
+  text-shadow: 0.5rem 0.5rem 0.5rem #eee;
+}
+
+
+.loader{
+  position: relative;
+  float: left;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: linear-gradient(#14ffe9,#ffeb3d,#ff00e0);
+  animation: animate 2s linear infinite;
+  position: fixed;
+  margin: 2rem;
+  
+}
+
+@keyframes animate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.loader span{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(#14ffe9,#ffeb3d,#ff00e0);
+
+}
+
+.loader span:nth-child(1){
+  filter: blur(1rem);
+}
+
+.loader span:nth-child(2){
+  filter: blur(2rem);
+}
+
+.loader span:nth-child(3){
+  filter: blur(3rem);
+}
+
+.loader span:nth-child(4){
+  filter: blur(4rem);
+}
+
+.loader span:nth-child(5){
+  float: left;
+  text-align: center;
+
+}
+
+
